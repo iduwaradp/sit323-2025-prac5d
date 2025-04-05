@@ -27,13 +27,15 @@ Authenticate using gcloud:
 gcloud auth configure-docker australia-southeast2-docker.pkg.dev
 ```
 4. Push the Docker image to Google Cloud
-```bash
+
 Push the built Docker image to your Artifact Registry:
+```bash
 docker push australia-southeast2-docker.pkg.dev/sit323-25t1-muthugala-7935cea/online-bookstore-repo/online-bookstore:latest
 ```
 5. Run the Docker image locally
-```bash
+
 You can run the image locally to test the service:
+```bash
 docker run -p 3000:3000 australia-southeast2-docker.pkg.dev/sit323-25t1-muthugala-7935cea/online-bookstore-repo/online-bookstore:latest
-Visit http://localhost:3000 to access the application.
 ```
+Visit http://localhost:3000 to access the application.
